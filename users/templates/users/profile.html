@@ -1,0 +1,11 @@
+{% extends 'food/base.html' %}
+
+{% block body %}
+
+
+<h1>{{ user.username }}</h1>
+<img width="250px" src="{{ user.profile.image.url }}">
+
+<a class="btn btn-primary" href="{% url 'food:index' %}">Back</a>
+
+{% endblock %}
